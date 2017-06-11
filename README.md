@@ -1,12 +1,11 @@
 ![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 
 <p align="center">
-	<a href="https://david-dm.org/MichMich/MagicMirror"><img src="https://david-dm.org/MichMich/MagicMirror.svg" alt="Dependency Status"></a>
-	<a href="https://david-dm.org/MichMich/MagicMirror#info=devDependencies"><img src="https://david-dm.org/MichMich/MagicMirror/dev-status.svg" alt="devDependency Status"></a>
-	<a href="https://bestpractices.coreinfrastructure.org/projects/347"><img src="https://bestpractices.coreinfrastructure.org/projects/347/badge"></a>
+	<a href="https://david-dm.org/dhaasler/MagicMirror"><img src="https://david-dm.org/dhaasler/MagicMirror.svg" alt="Dependency Status"></a>
+	<a href="https://david-dm.org/dhaasler/MagicMirror#info=devDependencies"><img src="https://david-dm.org/dhaasler/MagicMirror/dev-status.svg" alt="devDependency Status"></a>
 	<a href="http://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-	<a href="https://travis-ci.org/MichMich/MagicMirror"><img src="https://travis-ci.org/MichMich/MagicMirror.svg" alt="Travis"></a>
-	<a href="https://snyk.io/test/github/MichMich/MagicMirror"><img src="https://snyk.io/test/github/MichMich/MagicMirror/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/MichMich/MagicMirror" style="max-width:100%;"></a>
+	<a href="https://travis-ci.org/dhaasler/MagicMirror"><img src="https://travis-ci.org/dhaasler/MagicMirror.svg" alt="Travis"></a>
+	<a href="https://snyk.io/test/github/dhaasler/MagicMirror"><img src="https://snyk.io/test/github/dhaasler/MagicMirror/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/MichMich/MagicMirror" style="max-width:100%;"></a>
 </p>
 
 **MagicMirror²** is an open source modular smart mirror platform. With a growing list of installable modules, the **MagicMirror²** allows you to convert your hallway or bathroom mirror into your personal assistant. **MagicMirror²** is built by the creator of [the original MagicMirror](http://michaelteeuw.nl/tagged/magicmirror) with the incredible help of a [growing community of contributors](https://github.com/MichMich/MagicMirror/graphs/contributors).
@@ -31,13 +30,13 @@ Electron, the app wrapper around MagicMirror², only supports the Raspberry Pi 2
 
 Execute the following command on your Raspberry Pi to install MagicMirror²:
 ````
-bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
+bash -c "$(curl -sL https://raw.githubusercontent.com/dhaasler/MagicMirror/master/installers/raspberry.sh)"
 ````
 
 ### Manual Installation
 
 1. Download and install the latest Node.js version.
-2. Clone the repository and check out the master branch: `git clone https://github.com/MichMich/MagicMirror`
+2. Clone the repository and check out the master branch: `git clone https://github.com/dhaasler/MagicMirror`
 3. Enter the repository: `cd ~/MagicMirror`
 4. Install and run the app: `npm install && npm start`
 
@@ -80,7 +79,7 @@ If you want to run the server on a raspberry pi, use the `raspberry` tag. (basti
 #### Manual
 
 1. Download and install the latest Node.js version.
-2. Clone the repository and check out the master branch: `git clone https://github.com/MichMich/MagicMirror`
+2. Clone the repository and check out the master branch: `git clone https://github.com/dhaasler/MagicMirror`
 3. Enter the repository: `cd ~/MagicMirror`
 4. Install and run the app: `npm install && node serveronly`
 

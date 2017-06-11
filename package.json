@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichMich/MagicMirror.git"
+    "url": "git+https://github.com/dhaasler/MagicMirror.git"
   },
   "keywords": [
     "magic mirror",
@@ -24,11 +24,11 @@
   ],
   "author": "Michael Teeuw",
   "contributors": [
-    "https://github.com/MichMich/MagicMirror/graphs/contributors"
+    "https://github.com/dhaasler/MagicMirror/graphs/contributors"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MichMich/MagicMirror/issues"
+    "url": "https://github.com/dhaasler/MagicMirror/issues"
   },
   "homepage": "https://magicmirror.builders",
   "devDependencies": {
