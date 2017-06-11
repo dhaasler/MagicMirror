@@ -101,7 +101,7 @@ if [ -d "$HOME/MagicMirror2" ] ; then
 fi
 
 echo -e "\e[96mCloning MagicMirror ...\e[90m"
-if git clone https://github.com/dhaasler/MagicMirror.git; then 
+if git clone https://github.com/dhaasler/MagicMirror.git ~/MagicMirror2; then
 	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
 else
 	echo -e "\e[91mUnable to clone MagicMirror."
