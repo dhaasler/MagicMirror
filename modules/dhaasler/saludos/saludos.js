@@ -20,7 +20,7 @@ Module.register("saludos",{
 		var numero = Math.random();                  //randomizo un número entre 0 y 1 para compararlo con un valor fijo y si
 		                                             //es mayor que 0.5, muestro una frase genérica, si es menor, muestro el
 		                                             //saludo acorde con la hora del día
-		salida.className = this.config.classes ? this.config.classes : "thin bright";
+		salida.className = "thin large bright";			 //para verlo en letra fina, estilizada y grande
 		var hora = moment().hour(); 
 		if (numero > 0.5) {
 		    if (hora >= 5 && hora <12) {

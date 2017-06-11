@@ -17,17 +17,22 @@ Module.register("reloj",{
 
 	getDom: function() {
 		var self = this;
+		var fecha = document.createElement("div");
 		var salida = document.createElement("div");
-		var importante = document.createElement("span"); // creamos dos subhijos para la salida
-		var extra = document.createElement("span");		// y así poner los segundos en otra tonalidad de color
-		salida.appendChild(importante);
-		salida.appendChild(extra);
+		var horayminutos = document.createElement("span"); // creamos subhijos para la salida
+		var segundos = document.createElement("span");		// y así poner los segundos en otra tonalidad de color
 		var hora = moment().hour();
-        var minuto = moment().minute();
-        var segundo = moment().second();
-		importante.innerHTML = hora + ":" + minuto;
-		extra.innerHTML = " " + segundo;
-		extra.className = this.config.classes ? this.config.classes : "gris";
+        var minuto = moment().format("mm");  //que se vean minutos y segundos con dos dígitos
+        var segundo = moment().format("ss");
+        var dia = moment().format("dddd, DD [de] MMMM");		//para leer la fecha en ese formato
+        fecha.innerHTML = dia;
+		horayminutos.innerHTML = hora + ":" + minuto;
+		segundos.innerHTML = " " + segundo;
+		segundos.className =  "bright gris light";
+		horayminutos.className = "time bright large light";
+		salida.appendChild(fecha);
+		salida.appendChild(horayminutos);					//se unen las salidas
+		salida.appendChild(segundos);
 		return salida;
 	}
 });
