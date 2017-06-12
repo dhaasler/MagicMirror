@@ -37,6 +37,10 @@ var config = {
 			position: "top_left"
 		},
 		{
+			module: "dhaasler/saludos",
+			position: "bottom_bar"
+		},
+		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
@@ -49,7 +53,7 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		},
+		},*/
 	]
 
 };
