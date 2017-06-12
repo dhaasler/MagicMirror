@@ -13,7 +13,7 @@ Module.register("tiempo",{
     getDom: function() {
         var self = this;
 		var salida = document.createElement("div");
-		salida.className =  "thin";
+		salida.className =  "large thin";
 		salida.innerHTML = this.temp;
 		return salida;
 	},
