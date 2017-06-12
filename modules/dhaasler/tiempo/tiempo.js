@@ -11,10 +11,9 @@ Module.register("tiempo",{
 		this.cogerTiempo();
 	},
     getDom: function() {
-        Log.info("get dom");
         var self = this;
 		var salida = document.createElement("div");
-		salida.className =  "large bright thin";
+		salida.className =  "thin";
 		salida.innerHTML = this.temp;
 		return salida;
 	},
@@ -26,10 +25,10 @@ Module.register("tiempo",{
 		    weatherRequest.onreadystatechange = function() {
 		    	if (this.readyState === 4) {
 		    	    if (this.status === 200) {                              //comprueba la validez de la URL
-		    		    var data = JSON.parse(this.response);               
+		    		    var data = JSON.parse(this.response); 
 		    		    self.temp = parseInt(data.main.temp) + " ºC";       //recuperamos el valor de temperatura
 		    		    self.obtenido = true;
-	        	    self.updateDom(1000);                               //animación de 1 segundo
+	        	    self.updateDom(1000);                                   //animación de 1 segundo
 				    } else {
 				        self.cogerTiempo();
 			        }
