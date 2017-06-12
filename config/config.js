@@ -22,34 +22,19 @@ var config = {
 
 	modules: [
 		{
-			module: "alert",
+			module: "alert"
 		},
 		{
 			module: "updatenotification",
 			position: "top_bar"
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
+			module: "dhaasler/reloj",
+			position: "top_left"
 		},
 		{
-			module: "currentweather",
-			position: "top_left",
-			config: {
-				location: "Madrid",
-				locationID: "3117735",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "29849a712b4368d0e37376ea9b2a2b1e"
-			}
-		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "Madrid",
-				locationID: "3117735",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "f29ec2be5f773eb9da926e5aa74d219e"
-			}
+			module: "dhaasler/tiempo",
+			position: "top_left"
 		},
 		{
 			module: "newsfeed",
